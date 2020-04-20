@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="monumentswebpage.FXMLDocumentController">
+  <tabs>
+    <Tab fx:id="ETower" onSelectionChanged="#ETowerTabClicked" text="Eiffel Tower">
+         <content>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TreeView fx:id="treeView" layoutY="171.0" prefHeight="200.0" prefWidth="200.0" />
+                  <ImageView fitHeight="209.0" fitWidth="234.0" layoutX="319.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Pictures/tourEiffel.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="201.0" layoutY="50.0" text="The Eiffel Tower">
+                     <font>
+                        <Font name="Calibri" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </content>
+    </Tab>
+    <Tab onSelectionChanged="#SCoeurTabClicked" text="Sacré Coeur">
+         <content>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="211.0" layoutY="60.0" text="The Sacré Coeur">
+                     <font>
+                        <Font name="Calibri" size="30.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="209.0" fitWidth="234.0" layoutX="329.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Pictures/sacreCoeur.jpg" />
+                     </image>
+                  </ImageView>
+                  <TreeView fx:id="SCoeurTree" layoutX="10.0" layoutY="181.0" prefHeight="200.0" prefWidth="200.0" />
+               </children>
+            </AnchorPane>
+         </content></Tab>
+  </tabs>
+</TabPane>
