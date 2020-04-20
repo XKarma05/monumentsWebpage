@@ -2,7 +2,7 @@ package monumentswebpage;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.event.Event;
+import javafx.scene.input.MouseEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Tab;
@@ -37,11 +37,9 @@ public class FXMLDocumentController implements Initializable {
     }
 
     @FXML
-    private void ETowerTabClicked(Event event) {
+    private void monumentsListClicked(MouseEvent event) {
+        //si j'ai bien compris j'associe cette méthode à un boutton par exemple
+        //et ensuite j'affiche la scène que j'ai crée en superpotion
+        //j'ai essayé de piocher dans ton code c'est un truc avec KeyFrame et timeline mais pas facile à comprendre
     }
-
-    @FXML
-    private void SCoeurTabClicked(Event event) {
-    }
-
 }
